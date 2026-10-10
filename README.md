@@ -94,7 +94,7 @@ The report in `runs/report.md`, which the GitHub workflow also shows on the run 
 - Score: 0.80 (8/10 cases)
 - Pass mark: 0.90, agreed by product owner on 2026-10-01
 - Answers: `evals/answers/new-prompt.jsonl`
-- Commit: `60c66b4809e4`
+- Commit: `f904354c4324`
 
 | Case | Critical | Why it failed | Failure it guards against |
 |---|---|---|---|
@@ -107,8 +107,8 @@ Past runs, from the evidence file:
 ```
 $ uv run eval-gate history
 when (UTC)           commit        score  mark  result   failed
-2026-10-10T12:21:46  60c66b4809e4   1.00  0.90  release  -
-2026-10-10T12:21:46  60c66b4809e4   0.80  0.90  BLOCKED  cooling-off-period, outage-check-json
+2026-10-10T12:21:46  f904354c4324   1.00  0.90  release  -
+2026-10-10T12:21:46  f904354c4324   0.80  0.90  BLOCKED  cooling-off-period, outage-check-json
 ```
 
 ## How to write a case from a real incident
