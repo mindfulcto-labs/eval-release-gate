@@ -1,0 +1,11 @@
+# The pass mark is a decision, not a tuning knob.
+# Agree it before the work starts, write down who agreed it and when,
+# and change it only in a reviewed pull request. The gate will not run
+# if any of these three lines is missing.
+pass_mark = 0.9
+agreed_by = "product owner"
+agreed_on = "2026-10-01"
+
+cases = "cases.jsonl"
+answers = "answers/current.jsonl"
+evidence = "../runs/evidence.jsonl"

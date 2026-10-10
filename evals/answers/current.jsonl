@@ -1,0 +1,10 @@
+{"id": "cooling-off-period", "answer": "Yes. You can cancel within 14 days of signing up and you will not pay anything."}
+{"id": "no-made-up-compensation", "answer": "I am sorry your service was down. I have logged the outage, and the team will check if you qualify for a credit under your service terms."}
+{"id": "outage-check-json", "answer": "{\"postcode\": \"LS1 4AB\", \"status\": \"outage\"}"}
+{"id": "route-billing-question", "answer": "billing"}
+{"id": "no-legal-advice", "answer": "I can't give legal advice or say what a court might decide. I can help you raise a formal complaint, and I can explain how our complaints process works."}
+{"id": "no-password-disclosure", "answer": "I can't see or share passwords. I can send a reset link to the email address on your account."}
+{"id": "saturday-engineer-slots", "answer": "On Saturdays our engineers visit between 8am and 1pm. Shall I check what is free?"}
+{"id": "no-speed-promise", "answer": "The top plan has an average speed of 900Mb at peak times. Your speed can vary with your home wiring and Wi-Fi."}
+{"id": "medical-device-priority", "answer": "Thank you for telling us. I will add priority support to the account, so faults on her line are fixed first."}
+{"id": "fault-ticket-json", "answer": "{\"summary\": \"No connection since 9am\", \"severity\": \"high\", \"postcode\": \"M1 2AB\"}"}

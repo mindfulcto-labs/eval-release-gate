@@ -1,0 +1,32 @@
+# The eval gate. Make the "eval-gate" job a required status check on main
+# (see the README) and a pull request below the pass mark cannot merge.
+name: eval-gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  eval-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync
+      # Recorded answers: no model and no key needed. To call a real model,
+      # add a repository secret and use: uv run eval-gate check --live examples.live_model:answer
+      - name: Run the gate (exits 1 below the pass mark)
+        run: uv run eval-gate check
+      - name: Keep the report and the evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-gate-${{ github.sha }}
+          path: runs/
+          retention-days: 90
